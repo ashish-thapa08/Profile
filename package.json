@@ -1,8 +1,11 @@
 {
   "name": "portfolio",
+  "homepage": "https://ashish-thapa08.github.io/Profile",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -10,15 +13,19 @@
   },
   "dependencies": {
     "@ramonak/react-progress-bar": "^3.2.1",
+    "@reduxjs/toolkit": "^1.8.0",
     "bootstrap": "^5.1.0",
-    "next": "11.1.2",
-    "react": "17.0.2",
+    "gh-pages": "^3.2.3",
+    "next": "^13.5.6",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.0.0-beta.6",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.2.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "^13.5.6"
   }
 }
